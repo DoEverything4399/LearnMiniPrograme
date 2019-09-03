@@ -1,0 +1,7 @@
+{
+  "notes": "// 全局配置文件，比如Windows/tabbar",
+  "pages": [
+    "pages/about/about",
+    "pages/home/home"
+  ]
+}
