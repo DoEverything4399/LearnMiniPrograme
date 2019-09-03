@@ -1,66 +1,27 @@
-// pages/about/about.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  data:{
+    name:'Feynman',
+    age:18,
+    movies:[
+      '进击的巨人',
+      '哪吒-魔童降世',
+      '海王',
+      '变形金刚'
+    ],
+    counter:0
   },
+  clickAdd(){
+    //内部没有数据响应，这点像react
+    // this.data.counter++
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+    this.setData({
+      //不支持++
+      counter:this.data.counter+1
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  clickSubstraction(){
+    this.setData({
+      counter:this.data.counter-1
+    })
   }
 })

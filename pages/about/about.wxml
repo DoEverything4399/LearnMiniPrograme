@@ -1,2 +1,14 @@
 <!--pages/about/about.wxml-->
+<!-- 1.小程序的数据绑定 -->
+<!--    view 是小程序中的一个组件，相当于div -->
+<view>hello {{name}}</view>
+<!--     相当于VUEJS中的Mustache语法 -->
+<view>age:{{age}}</view>
+<!-- 2.列表展示 wx:for=-->
+<view wx:for='{{movies}}'>{{item}}</view>
 
+<!-- 3.事件监听改变data -->
+
+<view>当前计数：{{counter}}</view>
+<button size="mini" bindtap="clickAdd">+</button>
+<button size="mini" bindtap="clickSubstraction">-</button>
